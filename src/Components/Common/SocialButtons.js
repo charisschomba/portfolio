@@ -1,6 +1,6 @@
 import React from "react";
 import Github from "react-ionicons/lib/LogoGithub";
-import {facebook, github, linkedIn, twitter} from "../../utils/socialLinks";
+import {facebook, github, linkedIn, twitter} from "../../utils";
 import LinkdeIn from "react-ionicons/lib/LogoLinkedin";
 import Twitter from "react-ionicons/lib/LogoTwitter";
 import Facebook from "react-ionicons/lib/LogoFacebook";

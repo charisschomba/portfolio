@@ -6,7 +6,7 @@ import GetInTouchSection from "./GetInTouch";
 import Header from "../../Header/Header";
  const ContactPage = () => {
    return (
-     <div className="lightbox-wrapper">
+     <div className="lightbox-wrapper lightbox-wrapper-contact">
        <Header/>
        <div className="container">
          <div className="row">

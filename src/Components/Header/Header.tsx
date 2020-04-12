@@ -3,7 +3,6 @@ import logo from '../../assets/img/img-logo.png'
 import './index.css'
 const Header = () => {
   return (
-    <div>
       <nav className="navbar-expand-md navbar fixed-top" id="navbar">
         <a className="navbar-brand" data-scroll="" href="/">
         <img className="img-fluid" src={logo} alt="Logo"/>
@@ -18,7 +17,7 @@ const Header = () => {
         >
           <span className="btn-line"/>
         </span>
-        <div className="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item pr-4"><a className="nav-link" href="about">About</a></li>
             <li className="nav-item pr-4"><a className="nav-link" href="resume">Resume</a></li>
@@ -28,7 +27,6 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-    </div>
   )
 };
 

@@ -5,7 +5,7 @@ body {
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #111 !important;
+  background-image: url("./assets/img/home.jpg") !important;
 }
 
 code {
@@ -14,4 +14,13 @@ code {
 }
 .common-color {
   color: #9f9f9f;
+}
+.text-white {
+  color: white;
+}
+.lightbox-wrapper {
+  /*height: 100vh !important;*/
+}
+.common-background {
+  background-color: #161616 !important;
 }

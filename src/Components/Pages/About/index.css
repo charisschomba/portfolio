@@ -1,7 +1,6 @@
 .lightbox-wrapper {
      background-color: #101010;
      position: relative;
-     height: 100% !important;
  }
 .content-desc {
     font-size: 1.3em !important;
@@ -11,4 +10,10 @@ p.section-description {
 }
 .content-download:hover {
     color: white;
+}
+#about {
+    background-image: url("../../../assets/img/home.jpg") !important;
+}
+p.content-desc.common-color {
+    padding: 1em;
 }

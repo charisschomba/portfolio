@@ -1,7 +1,7 @@
 .resume-container {
     margin-top: 4em;
 }
-.lightbox-wrapper {
+.lightbox-wrapper-resume {
     height: 100% !important;
 }
 .skill-listing {
@@ -36,4 +36,7 @@
 .section-description.common-color {
     font-size: 1.4em !important;
     font-weight: 500;
+}
+#resume {
+    background-image: url("../../../assets/img/home.jpg") !important;
 }

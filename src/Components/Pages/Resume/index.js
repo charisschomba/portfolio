@@ -6,7 +6,7 @@ import UpperSection from "../../Common/UpperPageSection";
 
 const ResumeSection = () => {
   return (
-    <div className="lightbox-wrapper" id="resume" data-simplebar>
+    <div className="lightbox-wrapper lightbox-wrapper-resume" id="resume" data-simplebar>
       <Header/>
       <div className="container">
       <div className="row">
@@ -58,13 +58,13 @@ const ResumeSection = () => {
       <div className="skills-section single-section">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading">
+            <div className="section-heading mb-3">
               <p className="section-description common-color mt-5">My level of knowledge in some tools</p>
               <h2 className="section-title">My Skills</h2>
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row common-background p-3">
         <div className="col-12 col-md-6 mb-3">
           <SkillProgress progress={90} skillName={'Javascript'}/>
           <SkillProgress progress={95} skillName={'React Js'}/>

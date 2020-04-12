@@ -12,7 +12,7 @@ const ContactDetails = () => {
         <h4 className="content-title">Contact Info</h4>
         <p className="info-description common-color">Always available for freelance work if the right project comes along, Feel free
           to contact me!</p>
-        <ul className="list-unstyled list-info common-color">
+        <ul className="list-unstyled list-info common-color common-background p-3">
           <ContactDetailItem Icon={IosIonic} infoType={'Name'} infoValue={'Chariss Chomba'}/>
           <ContactDetailItem Icon={Map} infoType={'Location'} infoValue={'Nairobi, Kenya'}/>
           <ContactDetailItem Icon={Call} infoType={'Call Me'} infoValue={'+254720590196'}/>
