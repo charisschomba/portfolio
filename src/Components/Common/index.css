@@ -1,0 +1,9 @@
+.progress-bar-color {
+    background-color: #009e66;
+}
+.single-skill {
+    margin-bottom: 1em !important;
+}
+#resume .skills-section .single-skill .skill-progress {
+    height: 1rem;
+}

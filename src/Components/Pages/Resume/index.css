@@ -1,0 +1,39 @@
+.resume-container {
+    margin-top: 4em;
+}
+.lightbox-wrapper {
+    height: 100% !important;
+}
+.skill-listing {
+    height: 14em;
+    overflow-y: scroll;
+}
+.col-title {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.item-title {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.item-description{
+    font-size: 1.2em;
+    font-weight: 400;
+ }
+.item-details {
+    font-size: 1.1em;
+    color: #009e66;
+}
+.skill-name {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.skill-percentage {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.section-description.common-color {
+    font-size: 1.4em !important;
+    font-weight: 500;
+}

@@ -1,0 +1,14 @@
+.lightbox-wrapper {
+     background-color: #101010;
+     position: relative;
+     height: 100% !important;
+ }
+.content-desc {
+    font-size: 1.3em !important;
+}
+p.section-description {
+    font-size: 1.3em !important;
+}
+.content-download:hover {
+    color: white;
+}
