@@ -3,55 +3,55 @@ import './index.css'
 import Header from "../../Header/Header";
 import SkillProgress from "../../Common/SkillProgress";
 import UpperSection from "../../Common/UpperPageSection";
+import {ResumeItem, ResumeItemList} from "./ResumeItem";
+import {backend, frontend, tools, skills} from "../../../utils";
+import SectionTitle from "./ResumeSectionTitle";
 
 const ResumeSection = () => {
   return (
     <div className="lightbox-wrapper lightbox-wrapper-resume" id="resume" data-simplebar>
       <Header/>
-      <div className="container">
+      <div className="resume-wrapper">
       <div className="row">
         <div className="col-12">
-        <div className="lightbox-content">
+        <div className="lightbox-content mt-0">
             <UpperSection title={'Resume'} description={'Check out my Resume'}/>
     <div className="resume-section single-section">
       <div className="row resume-container">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 resume-detail-sec">
           <div className="col-block education">
-            <h3 className="col-title">Education</h3>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">Computer Science</h5><span className="item-details common-color">Cambridge University / 2004 - 2007</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
-            </div>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">Bachelor Degree</h5><span className="item-details common-color">University of Tokyo / 2008 - 2010</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
-            </div>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">Master Degree</h5><span className="item-details common-color">Harvard University / 2012 - 2015</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
-            </div>
+            <SectionTitle title={'Professional Experience'}/>
+            <ResumeItemList listItems={frontend} listTitle={'Frontend'}/>
+            <ResumeItemList listItems={backend} listTitle={'Backend'}/>
+            <SectionTitle title={'Supplementary Experience'}/>
+            <ResumeItemList listItems={skills} listTitle={'SKILLS'}/>
+            <ResumeItemList listItems={tools} listTitle={'TOOLS'}/>
           </div>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 resume-detail-sec">
           <div className="col-block experience">
-            <h3 className="col-title">Experience</h3>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">Software Engineer</h5><span className="item-details common-color">Adobe / 2015 - 2017</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
-                repudiandae.</p>
-            </div>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">Back-End Developer</h5><span
-                className="item-details common-color">Google / 2017 - 2018</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
-                repudiandae.</p>
-            </div>
-            <div className="resume-item"><span className="item-arrow"/>
-              <h5 className="item-title">UI/UX Designer</h5><span
-                className="item-details common-color">Discord / 2019 - Present</span>
-              <p className="item-description common-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
-                repudiandae.</p>
-            </div>
+            <SectionTitle title={'Education'}/>
+            <ResumeItem
+              itemTitle={'Bachelor of Science in Statistics and Programming'}
+              itemDetails={'Machakos University / 2014 - 2017'}
+              content={'Graduated with Second Class Honors.'}
+            />
+            <SectionTitle title={'Experience'}/>
+            <ResumeItem
+              itemTitle={'Software Engineer'}
+              itemDetails={'Andela (Sep 2018 - Present)'}
+              content={'Spearhead the design and development of customized applications and tools throughout the Agile software development lifecycle. Drive development from concept through testing and implementation to achieve all project milestones.'}
+            />
+            <ResumeItem
+              itemTitle={'Frontend Engineer'}
+              itemDetails={'Nursefly (Sep 2019 - Nov 2019)'}
+              content={'Worked on social authentication(Facebook and LinkedIn) by fixing major bugs as well as trivial features that improved recruiters accounts and nurses accounts, these features improved user experience.'}
+            />
+            <ResumeItem
+              itemTitle={'Fullstack Engineer'}
+              itemDetails={'VIISAUS (Jan 2019 - Mar 2019)'}
+              content={'I worked on the authentication flow, CMS and website'}
+            />
           </div>
         </div>
       </div>
@@ -64,18 +64,24 @@ const ResumeSection = () => {
             </div>
           </div>
         </div>
-        <div className="row common-background p-3">
-        <div className="col-12 col-md-6 mb-3">
-          <SkillProgress progress={90} skillName={'Javascript'}/>
+        <div className="row p-3">
+        <div className="col-12 col-md-6 mb-3 common-background">
+          <h5 className="item-title pt-2">Frontend</h5>
           <SkillProgress progress={95} skillName={'React Js'}/>
-          <SkillProgress progress={65} skillName={'React Native'}/>
-          <SkillProgress progress={70} skillName={'Angular 2'}/>
+          <SkillProgress progress={93} skillName={'HTML/CSS'}/>
+          <SkillProgress progress={90} skillName={'Redux'}/>
+          <SkillProgress progress={80} skillName={'Angular 7'}/>
+          <SkillProgress progress={70} skillName={'React Native'}/>
+          <SkillProgress progress={65} skillName={'TypeScript'}/>
         </div>
-        <div className="col-12 col-md-6 mb-3">
-          <SkillProgress progress={78} skillName={'Python'}/>
+        <div className="col-12 col-md-6 mb-3 common-background">
+          <h5 className="item-title pt-2">Backend</h5>
           <SkillProgress progress={80} skillName={'Node Js'}/>
           <SkillProgress progress={80} skillName={'Express JS'}/>
+          <SkillProgress progress={78} skillName={'Python'}/>
           <SkillProgress progress={68} skillName={'MongoDB'}/>
+          <SkillProgress progress={70} skillName={'SQL'}/>
+          <SkillProgress progress={50} skillName={'GraphQL'}/>
         </div>
       </div>
       </div>

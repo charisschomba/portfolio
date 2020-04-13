@@ -40,3 +40,24 @@
 #resume {
     background-image: url("../../../assets/img/home.jpg") !important;
 }
+.list-skills {
+    padding-left: 22px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.resume-item {
+    height: 15em;
+    overflow-y: scroll;
+}
+.resume-wrapper {
+    margin-top: 4em;
+    height: 100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow-y: scroll;
+}
+.resume-container {
+    margin-top: 4em;
+    height: 70vh;
+    overflow: auto;
+}
