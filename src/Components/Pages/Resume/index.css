@@ -56,8 +56,12 @@
     padding-right: 2em;
     overflow-y: scroll;
 }
-.resume-container {
-    margin-top: 4em;
-    height: 70vh;
-    overflow: auto;
+/*.resume-container {*/
+/*    margin-top: 4em;*/
+/*    height: 70vh;*/
+/*    overflow: auto;*/
+/*}*/
+.resume-detail-sec {
+    height: 75vh;
+    overflow-y: scroll;
 }

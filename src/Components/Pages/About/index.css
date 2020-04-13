@@ -8,6 +8,9 @@
 p.section-description {
     font-size: 1.3em !important;
 }
+.content-title {
+    font-size: 1.6em !important;
+}
 .content-download:hover {
     color: white;
 }
@@ -16,4 +19,8 @@ p.section-description {
 }
 p.content-desc.common-color {
     padding: 1em;
+}
+.about-container {
+    overflow-y: scroll;
+    height: 100vh;
 }

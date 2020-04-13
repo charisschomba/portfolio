@@ -9,9 +9,20 @@ const HomeSection = () => {
         <div className="row h-100 align-items-center justify-content-center">
           <div className="col-12 col-lg-8 home-content text-center">
             <h1 className="home-name">Chariss <span>Chomba</span></h1>
-            <h4 className="cd-headline clip home-headline">
-              I’m a Developer
+            <h4 className="cd-headline clip home-headline" style={{marginBottom: '30px'}}>
+              I’m a SoftWare  Developer
             </h4>
+            <p className="content-desc text-white py-1">
+              I don’t like to define myself by the work I’ve done. I define myself by the work I want to do.
+              Skills can be taught, personality is inherent.
+              I prefer to keep learning, continue challenging myself, and do interesting things that matter.
+            </p>
+            <p className="content-desc text-white py-1">
+              Fueled by high energy levels and boundless enthusiasm,
+              I’m easily inspired and more then willing to follow my fascinations wherever they take me.
+              I’m passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire.
+              I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them
+            </p>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const AboutSection = () => {
     <div className="col-12 col-lg-7 info-content">
       <div className="content-block">
         <h2 className="content-subtitle">Who am i?</h2>
-        <h6 className="content-title">I'm Chariss Chomba, a Fullstack Developer</h6>
+        <h6 className="content-title">A Software Developer based in Nairobi, Kenya.</h6>
        <ContentDesc/>
        <Address/>
        <CvSection/>

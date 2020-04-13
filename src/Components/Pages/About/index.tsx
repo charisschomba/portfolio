@@ -1,5 +1,4 @@
 import React from 'react';
-import SocialButtons from '../../Common/SocialButtons';
 import Header from '../../Header/Header';
 import UpperSection from '../../Common/UpperPageSection';
 import './index.css';
@@ -10,7 +9,7 @@ const AboutMe = () => {
   return (
     <div className="lightbox-wrapper" id="about" data-simplebar>
       <Header/>
-      <div className="container">
+      <div className="about-container container">
         <div className="row">
           <div className="col-12">
             <div className="lightbox-content">

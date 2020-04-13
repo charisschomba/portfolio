@@ -8,7 +8,7 @@ import Header from "../../Header/Header";
    return (
      <div className="lightbox-wrapper lightbox-wrapper-contact">
        <Header/>
-       <div className="container">
+       <div className="contact-container container">
          <div className="row">
            <div className="col-12">
              <div className="lightbox-content">
