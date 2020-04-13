@@ -24,3 +24,11 @@ code {
 .common-background {
   background-color: #161616 !important;
 }
+.home-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.home-name {
+  margin-top: 2em !important;
+}
+

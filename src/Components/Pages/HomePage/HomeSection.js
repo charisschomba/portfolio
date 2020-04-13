@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.css';
 import SocialButtons from "../../Common/SocialButtons";
-import Typical from 'react-typical'
+import Typical from 'react-typical';
+import Loader from "../../Common/Loader";
 
 const HomeSection = () => {
+  const [isLoading, setLoading] =  useState(true);
+  setTimeout(() => setLoading(false), 2000);
   return (
     <section className="home-area element-cover-bg" id="home">
-      <div className="container h-100">
+      {isLoading && <Loader/>}
+      <div className="home-container container h-100">
         <div className="row h-100 align-items-center justify-content-center">
           <div className="col-12 col-lg-8 home-content text-center">
             <h1 className="home-name">
