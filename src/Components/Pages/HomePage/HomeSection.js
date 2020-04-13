@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import SocialButtons from "../../Common/SocialButtons";
-import { Wave } from 'react-animated-text';
+import Typical from 'react-typical'
 
 const HomeSection = () => {
   return (
@@ -9,20 +9,16 @@ const HomeSection = () => {
       <div className="container h-100">
         <div className="row h-100 align-items-center justify-content-center">
           <div className="col-12 col-lg-8 home-content text-center">
-            <h1 className="home-name"><Wave effect="verticalFadeIn" text={'Hey friend, meet Chariss Chomba'}/></h1>
+            <h1 className="home-name">
+              <Typical steps={['Hey friend 🖐', 2000, 'Meet Chariss Chomba', 2000]}/>
+            </h1>
             <h4 className="cd-headline clip home-headline" style={{marginBottom: '30px'}}>
-              <Wave effect="verticalFadeIn" text={'a SoftWare  Developer'}/>
             </h4>
-            <p className="content-desc text-white py-1">
-              I don’t like to define myself by the work I’ve done. I define myself by the work I want to do.
-              Skills can be taught, personality is inherent.
-              I prefer to keep learning, continue challenging myself, and do interesting things that matter.
-            </p>
-            <p className="content-desc text-white py-1">
-              Fueled by high energy levels and boundless enthusiasm,
-              I’m easily inspired and more then willing to follow my fascinations wherever they take me.
-              I’m passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire.
-              I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them
+            <p className="content-desc-home text-white py-1">
+                Fueled by high energy levels and boundless enthusiasm,
+                'I’m easily inspired and more then willing to learn new and acquire new skills.
+                'I’m passionate, expressive, multi-talented spirit with a natural ability to work collaboratively.
+                'I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them
             </p>
           </div>
         </div>
