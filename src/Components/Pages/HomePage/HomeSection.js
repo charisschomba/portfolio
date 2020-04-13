@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import SocialButtons from "../../Common/SocialButtons";
+import { Wave } from 'react-animated-text';
 
 const HomeSection = () => {
   return (
@@ -8,9 +9,9 @@ const HomeSection = () => {
       <div className="container h-100">
         <div className="row h-100 align-items-center justify-content-center">
           <div className="col-12 col-lg-8 home-content text-center">
-            <h1 className="home-name">Chariss <span>Chomba</span></h1>
+            <h1 className="home-name"><Wave effect="verticalFadeIn" text={'Hey friend, meet Chariss Chomba'}/></h1>
             <h4 className="cd-headline clip home-headline" style={{marginBottom: '30px'}}>
-              I’m a SoftWare  Developer
+              <Wave effect="verticalFadeIn" text={'a SoftWare  Developer'}/>
             </h4>
             <p className="content-desc text-white py-1">
               I don’t like to define myself by the work I’ve done. I define myself by the work I want to do.
